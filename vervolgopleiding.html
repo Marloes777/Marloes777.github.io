@@ -6,22 +6,120 @@
         <link rel="stylesheet" href="CSSew/opmaakwebsite.css">
     </head>
     <body>
-        <nav>
-            <a class="navbar" href="index.html.html">Home</a>
-            <a class="navbar" href="overmij.html">Over mij</a>
-            <a class="navbar" href="cijfers.html">Cijfers</a>
-            <a class="navbar" href="vervolgopleiding.html">Vervolgopleiding</a>
-        </nav>
-        <h1>
-            Vervolgopleiding
-        </h1>
-    </body>
+        <main>
+            <nav>
+                <a class="navbar" href="index.html">Home</a>
+                <a class="navbar" href="overmij.html">Over mij</a>
+                <a class="navbar" href="cijfers.html">Cijfers</a>
+                <a class="navbar" href="vervolgopleiding.html">Vervolgopleiding</a>
+                <a class="navbar" href="loop.html">Loop</a>
+            </nav>
+            <img class="logo" src="img/logo.jpg" alt="logo ExamenMonitor">
+            <aside class="logo">
+                <b>ExamenMonitor</b>
+            </aside>   
+            <section>
+                    <h1>
+                        Vervolgopleiding
+                    </h1><br>
+                    <h3>
+                        Als je dan eindelijk je examen gehaald hebt, kan je zelf je vervolgopleiding kiezen. Je kan een studie doen die je zelf hebt
+                        uitgekozen, en met de kennis die je dan opdoet kan je later gaan werken. Daarom vind ik het belangrijk om een studie
+                        te kiezen die ik leuk vind en waarmee ik werk kan gaan doen dat me leuk lijkt. Hier zal ik iets laten zien over de studie
+                        die ik het liefst wil gaan doen: diergeneeskunde, en over mijn tweede keuze: animal sciences. 
+                    </h3><br>
+                    <h3 id="ButtonGeslaagd" onclick="gezaktFunction()">
+                        Geslaagd!
+                    </h3>
+                    <script>
+                        function gezaktFunction() {
+                        document.getElementById("ButtonGeslaagd").innerHTML = "Gezakt :(";
+                        }
+                    </script>
+                    <article class="gezakt">
+                        Klik hierop!
+                    </article>
+                    <article class="gezaktpijl">
+                        &#8601;
+                    </article>
+            </section><br><br><br><br>
+            <section>
+                    <h2 class="eerstekeuze">
+                        Diergeneeskunde
+                    </h2><br><br>
+                    <p>
+                        Sinds ik klein was, ben ik dol op dieren. Daarom wil ik na mijn middelbare school diergeneeskunde gaan studeren.
+                        Het lijkt me geweldig om de hele dag over dieren te leren, en later tijdens mijn werk dieren te kunnen helpen. 
+                        Ook weet ik al een beetje hoe het is om dierenarts te zijn, omdat ik wel eens een dag met een paardenarts mee mag lopen.
+                        Van hem leer ik heel veel over paarden zelf, en over hoe het is om een dierenarts te zijn.<br><br> 
+                        Jammer genoeg is het erg lastig om toegelaten te worden tot deze studie. De enige plek in Nederland waar deze studie
+                        te volgen is, is in Utrecht. Diergeneeskunde wordt ook in Gent gegeven, maar daar laten ze geen Nederlandse studenten meer toe
+                        als deze studenten later weer terug gaan naar Nerderland om te werken. <br><br>
+                        In Utrecht zijn er elk jaar ongeveer 1000 aanmeldingen voor diergeneeskunde, terwijl er per jaar maar 225 plekken beschikbaar zijn.
+                        Er is dan ook een toelatingsprocedure. Deze bestaat uit een aantal onderdelen: een toets over studiemateriaal dat je ca. 2 maanden
+                        voor de selectiedag toegestuurd hebt gekregen, een persoonlijkheidstest en een kritisch redeneren toets. Uit deze onderdelen komt een 
+                        eindscore, en als je tussen de 225 hoogste scores zit, ben je toegelaten. <br><br>
+                        De kans dat ik niet toegelaten word is dus erg groot. Daarom heb ik ook een plan B bedacht.
+                    </p><br><br><br>
+            </section>
+            <section>
+                    <h2 class="tweedekeuze">
+                        Animal Sciences
+                    </h2>
+                    <img class="animalsciences" src="img/animal sciences.jpg" alt="afbeelding Animal Sciences">
+                    <p>
+                        Bij Animal Sciences leer je eigenlijk alles over dieren. Het is niet heel anders dan diergeneeskunde, maar er is één
+                        duidelijk verschil. Bij diergeneeskunde word je opgeleid om later als dierenarts te werken en dieren te helpen.
+                        Bij Animal Sciences word je opgeleid om eigenaren van dieren te adviseren over hoe ze het beste met hun (huis)dier 
+                        om kunnen gaan. 
+                    </p><br><br>
+                    <canvas id="mijncanvas" width="400" height="200">
+                        <script>
+                            var c = document.getElementById("mijncanvas");
+                            var ctx = c.getContext("2d");
+                            ctx.moveTo (100,150);
+                            ctx.lineTo (300,50);
+                            ctx.moveTo (300,150);
+                            ctx.lineTo (100,50);
+                            ctx.stroke ();
+                        </script>
+                    </canvas>
+                    <article class="animalsciences">
+                        Met dieren werken:
+                    </article><br><br>
+                    <canvas id="canvas2" width="400" height="200px">
+                        <script>
+                            var c = document.getElementById("canvas2");
+                            var ctx = c.getContext("2d");
+                            ctx.moveTo (100,130);
+                            ctx.lineTo (200,175);
+                            ctx.moveTo (200,175);
+                            ctx.lineTo (350,30);
+                            ctx.stroke ();
+                        </script>
+                    </canvas>
+                    <article class="eigenarenvandieren">
+                        Met eigenaren van dieren werken:
+                    </article><br><br><br><br><br><br><br>
+            </section>
+            <section>
+                    <p>
+                        Omdat je bij Animal Sciences minder met dieren bezig bent dan bij diergeneeskunde, is dit mijn tweede keuze. 
+                        Maar, het lijkt me nog steeds leuk om bij Animal Sciences alles over dieren te leren. 
+                    </p>
+            </section>
+        </main>    
+    </body> 
     <footer>
         <p class="footer1">
             Contact:<br> telefoon: 06-30161912<br>
             e-mail: marloesbrummans@outlook.com<br>
             e-mail: m.brummans_118615@pontes.nl
         </p>
+        <img class="footer" src="img/logo.jpg" alt="logo ExamenMonitor">
+        <p class="footer">
+            ExamenMonitor
+        </p><br><br><br>
         <p class="footer2">
             Praktische Opdracht HTML-CSS-JS<br>
            &#169; Marloes Brummans, 2021
